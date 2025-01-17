@@ -30,3 +30,4 @@ public abstract class Stock implements Tradeable {
     public String toString() {
         return "Stock{name='" + this.name + "', price=" + this.price + ", description='" + this.description + "'}";
     }
+}

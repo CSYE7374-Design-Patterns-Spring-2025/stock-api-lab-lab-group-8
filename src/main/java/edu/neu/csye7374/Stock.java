@@ -1,6 +1,6 @@
 package edu.neu.csye7374;
 
-public abstract class Stock implements Tradable {
+public abstract class Stock implements Tradeable {
     private String name;
     private double price;
     private String description;

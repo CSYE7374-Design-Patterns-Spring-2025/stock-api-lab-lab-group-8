@@ -2,7 +2,7 @@ package edu.neu.csye7374;
 
 /**
  * 
- * @author Preyash Mehta
+ * @author Tirth Naik
  * 
  */
 

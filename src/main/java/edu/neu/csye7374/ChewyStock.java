@@ -15,4 +15,4 @@ public class ChewyStock extends Stock {
             return (int)this.bid + 5;
         }
     }
-}
+

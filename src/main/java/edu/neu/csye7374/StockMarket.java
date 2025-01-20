@@ -25,10 +25,8 @@ public class StockMarket {
 
     public void tradeStock(Stock stock, double bid) {
         if (stock != null) {
-            stock.setBid(bid);
-            stock.setPrice((double)stock.getMetric());
+            stock.setBid(String.valueOf(bid));
         }
-
     }
 
     public void removeStock(Stock stock) {

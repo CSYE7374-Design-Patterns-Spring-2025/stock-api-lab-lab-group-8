@@ -8,8 +8,8 @@ public abstract class Tradeable1 implements Tradeable {
     public Tradeable1() {
     }
 
-    public int getMetric() {
+    public String getMetric() {
         this.metric = (int)((this.bid - this.price) / this.price) * 100;
-        return this.metric;
+        return String.valueOf(this.metric);
     }
 }

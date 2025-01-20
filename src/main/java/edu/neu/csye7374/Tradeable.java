@@ -2,8 +2,8 @@ package edu.neu.csye7374;
 
 public interface Tradeable {
 
-        void setBid(double var1);
+        void setBid(String bid);
 
-        int getMetric();
+        String getMetric();
 
 }

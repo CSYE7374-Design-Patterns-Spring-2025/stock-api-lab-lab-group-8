@@ -60,6 +60,14 @@ public class StockMarket {
         dataBricks.setBid("7.0");
         stock.add(dataBricks);
 
+        Stock appleStock = new Apple("Apple Inc.", 150.00, "Apple Common Stock",
+                new ArrayList<>(Arrays.asList(140.00, 145.00, 150.00, 152.00, 148.00, 155.00)));
+        appleStock.setBid("160.0");
+        appleStock.setBid("170.0");
+        appleStock.setBid("165.0");
+        appleStock.setBid("175.0");
+        stock.add(appleStock);
+
         StockMarket market = StockMarket.getInstance();
         market.addStocks(stock);
         System.out.println("\n\n============Initial state=======================");
@@ -67,12 +75,16 @@ public class StockMarket {
 
         market.tradeStock("DataBricks", 10.0);
         market.tradeStock("Stripe", 19.0);
+        market.tradeStock("Apple Inc.", 165.0);
+
 
         System.out.println("\n\n============State after one bid===================");
         System.out.println(market);
 
         market.tradeStock("DataBricks", 9.0);
         market.tradeStock("Stripe", 11.0);
+        market.tradeStock("Apple Inc.", 170.0);
+
 
         System.out.println("\n\n============State after two bids===================");
         System.out.println(market);
